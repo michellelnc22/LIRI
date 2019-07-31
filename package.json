@@ -4,9 +4,11 @@
   "description": "",
   "main": "liri.js",
   "dependencies": {
+    "api": "^1.0.0",
     "axios": "^0.19.0",
     "dotenv": "^8.0.0",
-    "moment": "^2.24.0"
+    "moment": "^2.24.0",
+    "node": "^12.7.0"
   },
   "devDependencies": {},
   "scripts": {

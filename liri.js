@@ -78,3 +78,58 @@ function getConcert(artist) {
         
     })
 }
+
+function getSpotify(song) {
+
+  if (song === undefined) {
+     song = "The Sign"
+  }; 
+  
+  spotify.search({
+      type: "track", 
+      query: song
+  }, function (error, data) {
+   if (error) {
+      return console.log ("Error!" + error); 
+   }  
+
+   var spotifyArray = data.tracks.items; 
+
+   for (i = 0; i < spotifyArray.length; i++) {
+
+    console.log(divider);
+    console.log("Artist: " + data.tracks.items[i].artists[0].name); 
+    console.log("Song: " + data.tracks.items[i].name); 
+    console.log("Album: " + data.tracks.items[i].album.name); 
+    console.log("Preview Link: " + data.tracks.items[i].preview_url); 
+   }
+
+
+  }); 
+  
+}
+
+function getRandom() {
+    fs.readFile("./random.txt", "utf8", (error, data) => {
+        if (err) throw err; 
+        var file = data.split(","); 
+        console.log(fileContent[0] + " " + fileContent[1]); 
+        userSearch = fileContent[1]
+        switch (fileContent[0]) {
+            case "concert-this": 
+            getConcert();   
+            break; 
+            case "movie-this": 
+            getMovie(); 
+            break; 
+            case "spotify-this-song": 
+            getSpotify(); 
+            break; 
+            case "do-what-it-says": 
+            getRandom(); 
+            break; 
+            default: 
+            console.log("Try again"); 
+        }
+    }); 
+}
