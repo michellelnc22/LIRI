@@ -33,4 +33,22 @@ $ node liri.concert-this <insert-band-name-here>
 Example: 
 
 ![Concert Example]
-(https://michellelnc22.github.com/images/concert-demo.png)
+(https://michellelnc22.github.com/LIRI/screenshots/concert-demo.png)
+
+To look up information about a movie type: 
+
+```
+$ node liri.js movie-this <insert movie name>
+```
+Example: 
+![Movie Example]
+(https://michellelnc22.github.com/LIRI/screenshots/omdb-demo.png)
+
+To find information about a certain song, type: 
+
+```
+$ node liri.js spotify-this-song <insert song title>
+```
+Example: 
+![Spotify Demo]
+(https://michellelnc22.github.com/LIRI/screenshots/spotify-demo.png)
