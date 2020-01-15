@@ -33,4 +33,4 @@ $ node liri.concert-this <insert-band-name-here>
 Example: 
 
 ![Concert Example]
-(https://michellelnc22.github.com/LIRI/screenshots/concert-demo.png)
+(https://michellelnc22.github.com/images/concert-demo.png)
