@@ -1,12 +1,12 @@
 require("dotenv").config(); 
 
-var keys = require("./keys"); 
+var keys = require("./keys.js"); 
 
 var fs = require("fs"); 
 
 var axios = require("axios"); 
 
-var spotify = new spotify(keys.spotify); 
+var Spotify = require("node-spotify-api") ; 
 
 var moment = require("moment"); 
 
@@ -34,10 +34,10 @@ var userSearch = process.argv.slice(3).join(" ");
 
 var divider = "\n-----------------\n\n"; 
 
-var getMovie = function() {
+function getMovie() {
 
     if (userSearch === undefined) {
-        userSearch = "Mr. Nobody"; 
+        userSearch = "Toy Story"; 
     }
 
     var URL = "https://www.omdbapi.com/?t=" + userSearch + "&y=&plot=full&tomatoes=true&apikey=trilogy"; 
@@ -47,8 +47,8 @@ var getMovie = function() {
         var movieData = [
             "Title: " + jsonData.Title, 
             "Year: " + jsonData.Year, 
-            "IMDB Rating: " + jsonData.Ratings[0], 
-            "Rotten Tomatoes Rating: " + jsonData[2], 
+            "IMDB Rating: " + jsonData.imdbRating, 
+            "Rotten Tomatoes Rating: " + jsonData.Ratings[1].Value, 
             "Country: " + jsonData.Country, 
             "Language: " + jsonData.Language, 
             "Plot: " + jsonData.Plot, 
@@ -63,7 +63,7 @@ var getMovie = function() {
 }; 
 
 function getConcert() {
-    var URL = "https://rest.bandsintown.com/artists/" + userSearch + "?app_id=codingbootcamp";
+    var URL = "https://rest.bandsintown.com/artists/" + userSearch + "/events?app_id=codingbootcamp";
     axios.get(URL).then(function(response) {
       
         for (i = 0; i < response.data.length; i++) {
@@ -72,7 +72,7 @@ function getConcert() {
 
             var concertData = [
                 "Venue Name: " + jsonData.venue.name, 
-                "Location: " + jsonData.venue.city + jsonData.venue.region, 
+                "Location: " + jsonData.venue.city + " , " + jsonData.venue.region + " , " + jsonData.venue.country,  
                 "Date: " + day
             ].join("\n\n"); 
         }
@@ -87,27 +87,29 @@ function getConcert() {
 
 function getSpotify() {
 
+    var spotify = new Spotify(keys.spotify)
+
   if (userSearch === undefined) {
      userSearch = "The Sign"
   }; 
   
   spotify.search({
       type: "track", 
-      query: userSearch
+      query: userSearch, 
+      limit: 1
   }, function (error, data) {
    if (error) {
       return console.log ("Error!" + error); 
    }  
 
-   for (i = 0; i < data.tracks.items.length; i++) {
+   music = data.tracks.items[0]; 
+   console.log(
 
-    console.log(divider);
-    console.log("Artist: " + data.tracks.items[i].artists[0].name); 
-    console.log("Song: " + data.tracks.items[i].name); 
-    console.log("Album: " + data.tracks.items[i].album.name); 
-    console.log("Preview Link: " + data.tracks.items[i].preview_url); 
-   }
-
+    "\nSong: " + music.name + 
+    "\nArtist: " + music.album.artists[0].name + 
+    "\nAlbum: " + music.album.name +
+    "\nPreview: " + music.preview_url
+   )
 
   }); 
   

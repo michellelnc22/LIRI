@@ -1,1 +1,151 @@
-spotify-this-song,"I Want it That Way"
+spotify-this-song,"I Want it That Way"undefined
+-----------------
+
+Title: Knives Out
+
+Year: 2019
+
+IMDB Rating: [object Object]
+
+Rotten Tomatoes Rating: undefined
+
+Country: USA
+
+Language: English, Spanish
+
+Plot: A detective investigates the death of a patriarch of an eccentric, combative family.
+
+Actors: Daniel Craig, Chris Evans, Ana de Armas, Jamie Lee Curtis
+-----------------
+
+Title: Knives Out
+
+Year: 2019
+
+IMDB Rating: [object Object]
+
+Rotten Tomatoes Rating: undefined
+
+Country: USA
+
+Language: English, Spanish
+
+Plot: A detective investigates the death of a patriarch of an eccentric, combative family.
+
+Actors: Daniel Craig, Chris Evans, Ana de Armas, Jamie Lee Curtis
+-----------------
+
+Title: Knives Out
+
+Year: 2019
+
+IMDB Rating: 8.1
+
+Rotten Tomatoes Rating: 97%
+
+Country: USA
+
+Language: English, Spanish
+
+Plot: A detective investigates the death of a patriarch of an eccentric, combative family.
+
+Actors: Daniel Craig, Chris Evans, Ana de Armas, Jamie Lee Curtis
+-----------------
+
+Title: Knives Out
+
+Year: 2019
+
+IMDB Rating: 8.1
+
+Rotten Tomatoes Rating: 97%
+
+Country: USA
+
+Language: English, Spanish
+
+Plot: A detective investigates the death of a patriarch of an eccentric, combative family.
+
+Actors: Daniel Craig, Chris Evans, Ana de Armas, Jamie Lee Curtis
+-----------------
+
+undefined
+-----------------
+
+Venue Name: Canterbury Park
+
+Location: ShakopeeMN
+
+Date: July 24th 2020, 7:30:00 pm
+-----------------
+
+Venue Name: Canterbury Park
+
+Location: Shakopee,MN
+
+Date: July 24th 2020, 7:30:00 pm
+-----------------
+
+Venue Name: NOS Alive
+
+Location: Algés,,Portugal
+
+Date: July 10th 2020, 8:00:00 pm
+-----------------
+
+Venue Name: NOS Alive
+
+Location: Algés,Portugal
+
+Date: July 10th 2020, 8:00:00 pm
+-----------------
+
+Venue Name: Canterbury Park
+
+Location: ShakopeeMN,United States
+
+Date: July 24th 2020, 7:30:00 pm
+-----------------
+
+Venue Name: Canterbury Park
+
+Location: Shakopee ,MN ,United States
+
+Date: July 24th 2020, 7:30:00 pm
+-----------------
+
+Venue Name: Alamo Drafthouse Cinema LaCenterra
+
+Location: Katy , TX , United States
+
+Date: May 14th 2020, 7:30:00 pm
+-----------------
+
+Venue Name: Alamo Drafthouse Cinema LaCenterra
+
+Location: Katy ,TX ,United States
+
+Date: May 14th 2020, 7:30:00 pm
+-----------------
+
+Venue Name: The O2
+
+Location: London ,  , United Kingdom
+
+Date: July 30th 2020, 7:00:00 pm
+-----------------
+
+Venue Name: Alamo Drafthouse Cinema LaCenterra
+
+Location: Katy , TX , United States
+
+Date: May 14th 2020, 7:30:00 pm
+-----------------
+
+Venue Name: Canterbury Park
+
+Location: Shakopee , MN , United States
+
+Date: July 24th 2020, 7:30:00 pm
+-----------------
+
