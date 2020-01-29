@@ -32,8 +32,7 @@ $ node liri.concert-this <insert-band-name-here>
 
 Example: 
 
-![Concert Example]
-(/screenshots/concert-demo.png)
+![Concert Example](https://github.com/michellelnc22/LIRI/blob/master/screenshots/concert-demo.png)
 
 To look up information about a movie type: 
 
@@ -41,8 +40,7 @@ To look up information about a movie type:
 $ node liri.js movie-this <insert movie name>
 ```
 Example: 
-![Movie Example]
-(https://michellelnc22.github.com/LIRI/screenshots/omdb-demo.png)
+![Movie Example](https://github.com/michellelnc22/LIRI/blob/master/screenshots/omdb-demo.png)
 
 To find information about a certain song, type: 
 
@@ -50,5 +48,4 @@ To find information about a certain song, type:
 $ node liri.js spotify-this-song <insert song title>
 ```
 Example: 
-![Spotify Demo]
-(https://michellelnc22.github.com/LIRI/screenshots/spotify-demo.png)
+![Spotify Demo](https://github.com/michellelnc22/LIRI/blob/master/screenshots/spotify-demo.png)
